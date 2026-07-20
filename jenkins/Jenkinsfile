@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         // ⚠️ Change this string to match the exact Name from your Jenkins Tools config
-        maven 'Maven 3.9.14' 
+        maven 'scope-maven' 
     }
     options {
         skipStagesAfterUnstable()
