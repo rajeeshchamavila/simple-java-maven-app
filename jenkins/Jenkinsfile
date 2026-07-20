@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    tools {
-        // ⚠️ Change this string to match the exact Name from your Jenkins Tools config
-        maven 'scope-maven' 
-    }
     options {
         skipStagesAfterUnstable()
     }
