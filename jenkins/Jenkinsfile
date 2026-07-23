@@ -10,6 +10,10 @@ pipeline {
     }
     stages {
         stage('Build') {
+            environment {
+            // Limits Maven to 512MB of heap memory
+            MAVEN_OPTS = '-Xms256m -Xmx512m'
+            }
             steps {
                 sh 'mvn -B -DskipTests clean package'
             }
