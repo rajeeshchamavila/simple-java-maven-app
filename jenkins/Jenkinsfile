@@ -3,6 +3,7 @@ pipeline {
         label 'my-agent'
     }
     tools {
+      jdk 'jdk21'
       maven 'scope-maven'
     }
     options {
